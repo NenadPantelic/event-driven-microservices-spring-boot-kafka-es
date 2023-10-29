@@ -13,11 +13,19 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>event-driven-microservice-spring-boot-kafka-es</name>
     <description>Demo project for Spring Boot</description>
+    <modules>
+        <module>twitter-to-kafka-service</module>
+    </modules>
     <packaging>pom</packaging>
     <properties>
         <java.version>11</java.version>
-        <spring-boot.version>2.7.17</spring-boot.version>
+
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+
+        <!-- Dependency versions -->
+        <dep.spring-boot.version>2.7.17</dep.spring-boot.version>
+        <dep.twitter4j.version>4.0.7</dep.twitter4j.version>
+        <dep.lombok.version>1.18.16</dep.lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -26,14 +34,28 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
-                <version>${spring-boot.version}</version>
+                <version>${dep.spring-boot.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <version>${spring-boot.version}</version>
+                <version>${dep.spring-boot.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.twitter4j</groupId>
+                <artifactId>twitter4j-stream</artifactId>
+                <version>${dep.twitter4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${dep.lombok.version}</version>
+                <!-- not needed in runtime, just in compile timed -->
+                <scope>provided</scope>
             </dependency>
 
         </dependencies>
@@ -46,6 +68,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <!-- make it runnable, start the app, create build info, create Docker image -->
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${dep.spring-boot.version}</version>
                 </plugin>
                 <!--  by default, Maven uses Java 6; sets the Java compiler version for the Maven project -->
                 <plugin>

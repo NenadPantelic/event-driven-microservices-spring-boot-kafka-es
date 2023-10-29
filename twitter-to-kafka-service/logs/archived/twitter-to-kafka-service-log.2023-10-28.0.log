@@ -1,0 +1,17 @@
+2023-10-28 15:36:49 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.19 on nenad with PID 14062 (/home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es/twitter-to-kafka-service/target/classes started by nenad in /home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es)
+2023-10-28 15:36:49 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-28 15:36:50 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.058 seconds (JVM running for 1.617)
+2023-10-28 15:40:41 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.19 on nenad with PID 14336 (/home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es/twitter-to-kafka-service/target/classes started by nenad in /home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es)
+2023-10-28 15:40:41 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-28 15:40:42 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.082 seconds (JVM running for 1.62)
+2023-10-28 15:40:42 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Twitter keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-10-28 15:41:49 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.19 on nenad with PID 14564 (/home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es/twitter-to-kafka-service/target/classes started by nenad in /home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es)
+2023-10-28 15:41:49 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-28 15:41:50 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.338 seconds (JVM running for 2.071)
+2023-10-28 15:41:50 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - App starts...
+2023-10-28 15:41:50 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Twitter keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-10-28 15:46:02 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.19 on nenad with PID 14834 (/home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es/twitter-to-kafka-service/target/classes started by nenad in /home/nenad/Documents/Learning/event-driven-microservices-spring-boot-kafka-and-es)
+2023-10-28 15:46:02 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-28 15:46:02 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.05 seconds (JVM running for 1.616)
+2023-10-28 15:46:02 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - App starts...
+2023-10-28 15:46:02 [main] INFO  c.n.t.TwitterToKafkaServiceApplication - Twitter keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]
