@@ -1,0 +1,9 @@
+version: '3.7'
+
+networks:
+  application:
+    # resolution by host name, not by IP address
+    driver: bridge
+
+
+# run the compose file with - docker-compose -f common.yml -f kafka-cluster.yml up

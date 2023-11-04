@@ -1,6 +1,6 @@
 package com.np.twittertokafkaservice.runner.impl;
 
-import com.np.twittertokafkaservice.config.TwitterToKafkaServiceConfigData;
+import com.np.config.TwitterToKafkaServiceConfigData;
 import com.np.twittertokafkaservice.exception.TwitterToKafkaException;
 import com.np.twittertokafkaservice.listener.TwitterKafkaStatusListener;
 import com.np.twittertokafkaservice.runner.StreamRunner;
@@ -86,6 +86,7 @@ public class MockKafkaStreamRunner implements StreamRunner {
                 while (true) {
                     String formattedTweetAsJson = getFormattedTweet(keywords, minTweetLength, maxTweetLength);
                     Status status = TwitterObjectFactory.createStatus(formattedTweetAsJson);
+                    log.info("Created new tweet status: {}", status);
                     twitterKafkaStatusListener.onStatus(status);
                     sleep(sleepTimeMs);
                 }

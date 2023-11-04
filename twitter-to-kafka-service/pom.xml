@@ -12,8 +12,8 @@
     <artifactId>twitter-to-kafka-service</artifactId>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -39,6 +39,26 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.np</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.np</groupId>
+            <artifactId>kafka-admin</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.np</groupId>
+            <artifactId>kafka-producer</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -47,6 +67,24 @@
                 <groupId>org.springframework.boot</groupId>
                 <!-- make it runnable, start the app, create build info, create Docker image -->
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- docker image setup -->
+                <!-- when doing mvn clean install here, this step will try to load context which needs Kafka cluster;
+                use mvn install -DskipTests to skip tests-->
+                <configuration>
+                    <image>
+                        <name>${project.groupId}/twitter-to-kafka-service:${project.version}</name>
+                    </image>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <!-- Prevents single fat jar and uses caching during the image update -->
+                            <!-- it relies on Cloud Native Buildpacks: buildpacks.io-->
+                            <goal>build-image</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

@@ -1,6 +1,6 @@
 package com.np.twittertokafkaservice.runner.impl;
 
-import com.np.twittertokafkaservice.config.TwitterToKafkaServiceConfigData;
+import com.np.config.TwitterToKafkaServiceConfigData;
 import com.np.twittertokafkaservice.listener.TwitterKafkaStatusListener;
 import com.np.twittertokafkaservice.runner.StreamRunner;
 import lombok.extern.slf4j.Slf4j;
