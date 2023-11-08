@@ -135,3 +135,7 @@ distribution algorithm)
 - retryCount
 
 Apache Avro - data model specification; strict schema and efficient byte serialization
+
+
+# External config repository
+- one of the 12-factors 

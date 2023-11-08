@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: configserver
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/NenadPantelic/spring-cloud-config-server-repository
+          # the default branch from which to read the config files
+          default-label: main
+          username: NenadPantelic
+          password: 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
+          clone-on-start: true
+    # if the config repo is not found, the server should fail immediately
+    fail-fast: true
+
+  security:
+    user:
+      name: spring_cloud_user
+      password: spring_cloud_password!
+# required in case of loading configuration in bootstrap phase which has priority over application.yml; practically
+# we need it here to load
