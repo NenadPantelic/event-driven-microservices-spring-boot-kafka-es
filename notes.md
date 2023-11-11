@@ -139,3 +139,29 @@ Apache Avro - data model specification; strict schema and efficient byte seriali
 
 # External config repository
 - one of the 12-factors 
+
+# JASYPT vs JCE
+- JASYPT's default output is Base64 encoded (but can set output to HEX); 
+on the other hand, JCE's output is by default in hexadecimal format.
+- JASYPT doesn't support PBKDF2 - Password Based Key Derivation Function 2
+- PBKDF2 uses salt and iteration count - reduces vulnerability to force brute force attacks (slow to compute in brute 
+force manner) - the bigger iteration count, the harder to compute and with that, to apply brute force attack.
+- Rainbow attacks - type of attack that uses a hash table to crack passwords by comparison
+- JCE uses `AesBytesEncryptor` - based on PBKDF2 with salt and iteration count.
+- Bear in mind that secrets are decrypted in config server and sent unencrypted to other services (so use TLS communication)
+
+Asymmetric encryption:
+- More secure - uses two keys
+- Has a private secret key and a shared public key
+- The message is encrypted with public key and can only be decrypted with private key
+- slower than symmetric encryption because it has more complex logic 
+- provides confidentiality and data integrity (digital signature)
+- example: RSA
+
+Symmetric encryption:
+- less secure - one key
+- faster than asymmetric approach, as it uses the same key in encryption and decryption
+- message is encrypted and decrypted with the same shared key
+- provides confidentiality
+- sharing the key securely is a challenge
+- example: AES

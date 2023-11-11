@@ -1,0 +1,673 @@
+2023-11-11 13:31:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2023-11-11 13:31:08 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:08 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:08 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:31:08 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:31:08 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:31:08 [main] INFO  c.n.c.ConfigServerApplication - No active profile set, falling back to default profiles: default
+2023-11-11 13:31:10 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0016965e-ea14-3e1d-850b-2c1bfbac258a
+2023-11-11 13:31:10 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:31:10 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:31:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-11-11 13:31:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:31:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-11 13:31:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-11-11 13:31:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-11 13:31:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2453 ms
+2023-11-11 13:31:12 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:31:12 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5366575d, org.springframework.security.web.context.SecurityContextPersistenceFilter@35d88a54, org.springframework.security.web.header.HeaderWriterFilter@6d7e2795, org.springframework.security.web.csrf.CsrfFilter@6294e4a6, org.springframework.security.web.authentication.logout.LogoutFilter@32d1d6c5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c05097c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@335972a5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b6cad77, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@41f90b10, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d4818e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e8bd498, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fca53a7, org.springframework.security.web.session.SessionManagementFilter@752494dd, org.springframework.security.web.access.ExceptionTranslationFilter@1a02ebe0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54ca9420]
+2023-11-11 13:31:15 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:31:15 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:31:15 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-11 13:31:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:31:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-11-11 13:31:15 [main] INFO  c.n.c.ConfigServerApplication - Started ConfigServerApplication in 8.481 seconds (JVM running for 9.4)
+2023-11-11 13:31:16 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-11 13:31:16 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-11 13:31:16 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-11-11 13:31:16 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:17 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:17 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:17 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.051 seconds (JVM running for 11.131)
+2023-11-11 13:31:19 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:19 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:19 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:20 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.022 seconds (JVM running for 13.817)
+2023-11-11 13:31:22 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:22 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:22 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:22 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Started application in 0.023 seconds (JVM running for 16.424)
+2023-11-11 13:31:24 [http-nio-8888-exec-4] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:25 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:25 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:25 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Started application in 0.017 seconds (JVM running for 18.998)
+2023-11-11 13:31:27 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:27 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:27 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:27 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - Started application in 0.021 seconds (JVM running for 21.597)
+2023-11-11 13:31:29 [http-nio-8888-exec-6] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:30 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:30 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:30 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - Started application in 0.028 seconds (JVM running for 24.17)
+2023-11-11 13:31:32 [http-nio-8888-exec-7] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:32 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:32 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:32 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Started application in 0.018 seconds (JVM running for 26.734)
+2023-11-11 13:31:34 [http-nio-8888-exec-8] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:35 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:35 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:35 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - Started application in 0.014 seconds (JVM running for 29.374)
+2023-11-11 13:31:37 [http-nio-8888-exec-9] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:38 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:38 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:38 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Started application in 0.013 seconds (JVM running for 32.246)
+2023-11-11 13:31:40 [http-nio-8888-exec-10] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:40 [http-nio-8888-exec-10] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:40 [http-nio-8888-exec-10] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:40 [http-nio-8888-exec-10] INFO  o.s.boot.SpringApplication - Started application in 0.013 seconds (JVM running for 34.809)
+2023-11-11 13:31:43 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:43 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:43 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:43 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.016 seconds (JVM running for 37.468)
+2023-11-11 13:31:45 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:46 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:46 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:46 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.013 seconds (JVM running for 40.161)
+2023-11-11 13:31:48 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:49 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:49 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:49 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Started application in 0.012 seconds (JVM running for 42.891)
+2023-11-11 13:31:51 [http-nio-8888-exec-4] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:51 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:51 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:51 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Started application in 0.026 seconds (JVM running for 45.462)
+2023-11-11 13:31:53 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:54 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:54 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:54 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - Started application in 0.014 seconds (JVM running for 48.052)
+2023-11-11 13:31:56 [http-nio-8888-exec-6] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:56 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:56 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:56 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - Started application in 0.013 seconds (JVM running for 50.678)
+2023-11-11 13:31:58 [http-nio-8888-exec-7] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:31:59 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:31:59 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:31:59 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Started application in 0.014 seconds (JVM running for 53.281)
+2023-11-11 13:32:01 [http-nio-8888-exec-8] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:02 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:02 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:02 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - Started application in 0.024 seconds (JVM running for 56.018)
+2023-11-11 13:32:04 [http-nio-8888-exec-9] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:04 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:04 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:04 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Started application in 0.012 seconds (JVM running for 58.656)
+2023-11-11 13:32:06 [http-nio-8888-exec-10] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:07 [http-nio-8888-exec-10] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:07 [http-nio-8888-exec-10] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:07 [http-nio-8888-exec-10] INFO  o.s.boot.SpringApplication - Started application in 0.012 seconds (JVM running for 61.232)
+2023-11-11 13:32:09 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:10 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:10 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:10 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.017 seconds (JVM running for 63.895)
+2023-11-11 13:32:12 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:12 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:12 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:12 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.012 seconds (JVM running for 66.444)
+2023-11-11 13:32:14 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:15 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:15 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:15 [http-nio-8888-exec-3] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-11 13:32:15 [http-nio-8888-exec-3] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(Unknown Source)
+	at java.base/java.lang.Runtime.addShutdownHook(Unknown Source)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:953)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:400)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.config.server.environment.NativeEnvironmentRepository.findOne(NativeEnvironmentRepository.java:150)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:59)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:187)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:67)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:73)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:85)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:44)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:71)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:60)
+	at jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at jdk.internal.reflect.GeneratedMethodAccessor65.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.doHead(HttpServlet.java:240)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:216)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-11-11 13:32:15 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.c.ConfigServerHealthIndicator - Could not read repository: app
+org.springframework.cloud.config.server.environment.FailedToConstructEnvironmentException: Could not construct context for config=app profile=default label= includeOrigin=false; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.cloud.config.server.environment.NativeEnvironmentRepository.findOne(NativeEnvironmentRepository.java:161)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:59)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:187)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:67)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:73)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:85)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:44)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:71)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:60)
+	at jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at jdk.internal.reflect.GeneratedMethodAccessor65.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.doHead(HttpServlet.java:240)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:216)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(Unknown Source)
+	at java.base/java.lang.Runtime.addShutdownHook(Unknown Source)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:953)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:400)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.config.server.environment.NativeEnvironmentRepository.findOne(NativeEnvironmentRepository.java:150)
+	... 121 common frames omitted
+2023-11-11 13:32:15 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:32:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2023-11-11 13:32:39 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:39 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:39 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:32:39 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:32:39 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:32:39 [main] INFO  c.n.c.ConfigServerApplication - No active profile set, falling back to default profiles: default
+2023-11-11 13:32:41 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0016965e-ea14-3e1d-850b-2c1bfbac258a
+2023-11-11 13:32:41 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:32:41 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:32:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-11-11 13:32:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:32:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-11 13:32:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-11-11 13:32:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-11 13:32:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2164 ms
+2023-11-11 13:32:42 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:32:43 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1280bae3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1939a394, org.springframework.security.web.header.HeaderWriterFilter@3d4818e8, org.springframework.security.web.csrf.CsrfFilter@6c36051c, org.springframework.security.web.authentication.logout.LogoutFilter@8ce3f27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40a7974, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d4c4b14, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@256a5df0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53918b5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35cbeb54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@309cf657, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1868ed54, org.springframework.security.web.session.SessionManagementFilter@57bd9c2b, org.springframework.security.web.access.ExceptionTranslationFilter@35d88a54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@562f6681]
+2023-11-11 13:32:45 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:32:45 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:32:45 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-11 13:32:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:32:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-11-11 13:32:45 [main] INFO  c.n.c.ConfigServerApplication - Started ConfigServerApplication in 7.697 seconds (JVM running for 8.582)
+2023-11-11 13:32:47 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-11 13:32:47 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-11 13:32:47 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2023-11-11 13:32:47 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:48 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:48 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:48 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.036 seconds (JVM running for 10.925)
+2023-11-11 13:32:50 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:50 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:50 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:50 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.03 seconds (JVM running for 13.591)
+2023-11-11 13:32:52 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:53 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:53 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:53 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Started application in 0.026 seconds (JVM running for 16.208)
+2023-11-11 13:32:55 [http-nio-8888-exec-4] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:56 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:56 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:56 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Started application in 0.023 seconds (JVM running for 18.824)
+2023-11-11 13:32:58 [http-nio-8888-exec-5] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:32:58 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:32:58 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:32:58 [http-nio-8888-exec-5] INFO  o.s.boot.SpringApplication - Started application in 0.019 seconds (JVM running for 21.422)
+2023-11-11 13:33:00 [http-nio-8888-exec-6] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:01 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:01 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:01 [http-nio-8888-exec-6] INFO  o.s.boot.SpringApplication - Started application in 0.02 seconds (JVM running for 24.089)
+2023-11-11 13:33:03 [http-nio-8888-exec-7] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:03 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:03 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:03 [http-nio-8888-exec-7] INFO  o.s.boot.SpringApplication - Started application in 0.015 seconds (JVM running for 26.68)
+2023-11-11 13:33:05 [http-nio-8888-exec-8] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:08 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:08 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:08 [http-nio-8888-exec-8] INFO  o.s.boot.SpringApplication - Started application in 0.016 seconds (JVM running for 31.038)
+2023-11-11 13:33:10 [http-nio-8888-exec-9] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:12 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:12 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:12 [http-nio-8888-exec-9] INFO  o.s.boot.SpringApplication - Started application in 0.016 seconds (JVM running for 34.858)
+2023-11-11 13:33:14 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:15 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:15 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:15 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.012 seconds (JVM running for 38.034)
+2023-11-11 13:33:17 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:18 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:18 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:18 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.017 seconds (JVM running for 41.434)
+2023-11-11 13:33:20 [http-nio-8888-exec-3] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:21 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:21 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:21 [http-nio-8888-exec-3] INFO  o.s.boot.SpringApplication - Started application in 0.013 seconds (JVM running for 44.429)
+2023-11-11 13:33:23 [http-nio-8888-exec-4] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:24 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:24 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:24 [http-nio-8888-exec-4] INFO  o.s.boot.SpringApplication - Started application in 0.015 seconds (JVM running for 47.686)
+2023-11-11 13:33:26 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:33:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2023-11-11 13:33:48 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:48 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:48 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:33:48 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:33:48 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:33:48 [main] INFO  c.n.c.ConfigServerApplication - No active profile set, falling back to default profiles: default
+2023-11-11 13:33:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0016965e-ea14-3e1d-850b-2c1bfbac258a
+2023-11-11 13:33:50 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:33:50 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:33:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-11-11 13:33:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:33:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-11 13:33:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-11-11 13:33:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-11 13:33:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2314 ms
+2023-11-11 13:33:51 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:33:52 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cf88901, org.springframework.security.web.context.SecurityContextPersistenceFilter@59a2bed1, org.springframework.security.web.header.HeaderWriterFilter@35cbeb54, org.springframework.security.web.csrf.CsrfFilter@56402642, org.springframework.security.web.authentication.logout.LogoutFilter@e7d0db2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2773504f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1b5af65b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4780341, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f9a8ddc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b00d59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3275a47f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c910acd, org.springframework.security.web.session.SessionManagementFilter@5e8bd498, org.springframework.security.web.access.ExceptionTranslationFilter@1939a394, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8d5da7e]
+2023-11-11 13:33:55 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:33:55 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:33:55 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-11 13:33:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:33:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-11-11 13:33:56 [main] INFO  c.n.c.ConfigServerApplication - Started ConfigServerApplication in 9.222 seconds (JVM running for 10.007)
+2023-11-11 13:33:56 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-11 13:33:56 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-11 13:33:56 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2023-11-11 13:33:56 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:33:57 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:33:57 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:33:57 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.036 seconds (JVM running for 11.466)
+2023-11-11 13:34:00 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:34:01 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 78ab6edd0bed with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:34:01 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: twitter_to_kafka
+2023-11-11 13:34:01 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.027 seconds (JVM running for 15.423)
+2023-11-11 13:34:01 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6496359570416310199/config-client-twitter_to_kafka.yml
+2023-11-11 13:34:01 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6496359570416310199/config-client.yml
+2023-11-11 13:35:14 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:37:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2023-11-11 13:37:29 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:29 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:29 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:37:29 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:37:29 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:37:29 [main] INFO  c.n.c.ConfigServerApplication - No active profile set, falling back to default profiles: default
+2023-11-11 13:37:31 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0016965e-ea14-3e1d-850b-2c1bfbac258a
+2023-11-11 13:37:31 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:37:31 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:37:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-11-11 13:37:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:37:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-11 13:37:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-11-11 13:37:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-11 13:37:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2291 ms
+2023-11-11 13:37:33 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:37:34 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:37:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1280bae3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1939a394, org.springframework.security.web.header.HeaderWriterFilter@3d4818e8, org.springframework.security.web.csrf.CsrfFilter@6c36051c, org.springframework.security.web.authentication.logout.LogoutFilter@8ce3f27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40a7974, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d4c4b14, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@256a5df0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53918b5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35cbeb54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@309cf657, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1868ed54, org.springframework.security.web.session.SessionManagementFilter@57bd9c2b, org.springframework.security.web.access.ExceptionTranslationFilter@35d88a54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@562f6681]
+2023-11-11 13:37:37 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:37:37 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:37:37 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-11 13:37:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:37:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-11-11 13:37:37 [main] INFO  c.n.c.ConfigServerApplication - Started ConfigServerApplication in 9.468 seconds (JVM running for 10.29)
+2023-11-11 13:37:45 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-11 13:37:45 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-11 13:37:45 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2023-11-11 13:37:45 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:37:45 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 7279f6230c2f with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:37:45 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:37:45 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.048 seconds (JVM running for 18.566)
+2023-11-11 13:37:48 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:37:49 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 7279f6230c2f with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:37:49 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: twitter_to_kafka
+2023-11-11 13:37:49 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.034 seconds (JVM running for 22.23)
+2023-11-11 13:37:49 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-1921303376090169381/config-client-twitter_to_kafka.yml
+2023-11-11 13:37:49 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-1921303376090169381/config-client.yml
+2023-11-11 13:39:40 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:40:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2023-11-11 13:40:06 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:06 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:07 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:40:07 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:40:07 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:40:07 [main] INFO  c.n.c.ConfigServerApplication - No active profile set, falling back to default profiles: default
+2023-11-11 13:40:11 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0016965e-ea14-3e1d-850b-2c1bfbac258a
+2023-11-11 13:40:11 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configServerClient [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2023-11-11 13:40:11 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-11-11 13:40:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-11-11 13:40:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:40:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-11 13:40:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-11-11 13:40:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-11 13:40:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7198 ms
+2023-11-11 13:40:17 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-11 13:40:20 [main] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:40:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1280bae3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1939a394, org.springframework.security.web.header.HeaderWriterFilter@3d4818e8, org.springframework.security.web.csrf.CsrfFilter@6c36051c, org.springframework.security.web.authentication.logout.LogoutFilter@8ce3f27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40a7974, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d4c4b14, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@256a5df0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53918b5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35cbeb54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@309cf657, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1868ed54, org.springframework.security.web.session.SessionManagementFilter@57bd9c2b, org.springframework.security.web.access.ExceptionTranslationFilter@35d88a54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@562f6681]
+2023-11-11 13:40:26 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-11-11 13:40:26 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-11-11 13:40:27 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-11 13:40:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-11-11 13:40:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-11-11 13:40:28 [main] INFO  c.n.c.ConfigServerApplication - Started ConfigServerApplication in 23.296 seconds (JVM running for 24.421)
+2023-11-11 13:40:30 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-11 13:40:30 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-11 13:40:30 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 54 ms
+2023-11-11 13:40:30 [http-nio-8888-exec-1] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:40:31 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Starting application on 0084812e2070 with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:40:31 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - The following profiles are active: default
+2023-11-11 13:40:32 [http-nio-8888-exec-1] INFO  o.s.boot.SpringApplication - Started application in 0.284 seconds (JVM running for 28.144)
+2023-11-11 13:40:40 [http-nio-8888-exec-2] DEBUG o.s.c.c.s.s.GitCredentialsProviderFactory - Constructing UsernamePasswordCredentialsProvider for URI https://github.com/NenadPantelic/spring-cloud-config-server-repository
+2023-11-11 13:40:41 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Starting application on 0084812e2070 with PID 1 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-11-11 13:40:41 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - The following profiles are active: twitter_to_kafka
+2023-11-11 13:40:41 [http-nio-8888-exec-2] INFO  o.s.boot.SpringApplication - Started application in 0.037 seconds (JVM running for 37.126)
+2023-11-11 13:40:41 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13133893286600967809/config-client-twitter_to_kafka.yml
+2023-11-11 13:40:41 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-13133893286600967809/config-client.yml

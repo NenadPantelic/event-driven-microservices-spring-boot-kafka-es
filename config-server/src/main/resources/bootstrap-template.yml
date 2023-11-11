@@ -10,7 +10,7 @@ spring:
           # the default branch from which to read the config files
           default-label: main
           username: NenadPantelic
-          password: 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
+          password: SECRET
           clone-on-start: true
     # if the config repo is not found, the server should fail immediately
     fail-fast: true
