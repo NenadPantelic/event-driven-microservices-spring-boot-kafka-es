@@ -138,4 +138,17 @@ Apache Avro - data model specification; strict schema and efficient byte seriali
 
 
 # External config repository
-- one of the 12-factors 
+- one of the 12-factors
+
+# sdkman
+
+This lib will be installed under `~/.sdkman/candidates`
+`sdk install springboot <version>`
+`spring install org.springframework.cloud:spring-cloud-cli:2.2.3.RELEASE`
+
+```
+spring encrypt PLAIN_TEXT --key KEY
+```
+
+When use JCE, use `{cipher}ENCRYPTED_VALUE` (this `{cipher}` prefix is used to let Spring Boot know this value is encrypted
+with JCE).
