@@ -9,5 +9,13 @@ spring:
       name: twitter-to-kafka-service,config-client
       uri: http://localhost:8888
       username: spring_cloud_user
-      password: spring_cloud_password!
+      # spring boot will understand that this value has been decrypted using jasypt
+      password: ENC(elDW/NFclyGEuZJl8x43I6C1oA+oKFLojxlWigrL6J5yI1Tqe9d3lT+OFNgnLPqpfsQNeSZN5hE5VHc5O5KZ3Q==)
 
+#jasypt:
+#  encryptor:
+#    # 1. export JASYPT_ENCRYPTOR_PASSWORD="PasswordWeWantToSet"
+#    # 2. or in Program arguments: -Djasypt.encryptor.password="PasswordWeWantToSet" - with this approach no need to have
+     #this property in bootrstrap.yml
+#    # Demo_2023!
+#    password: ${JASYPT_ENCRYPTOR_PASSWORD}

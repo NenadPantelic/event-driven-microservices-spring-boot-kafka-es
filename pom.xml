@@ -22,6 +22,7 @@
         <module>kafka/kafka-producer</module>
         <module>common-config</module>
         <module>config-server</module>
+        <module>playground</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -39,6 +40,8 @@
         <dep.kafka-avro-serializer.version>5.5.1</dep.kafka-avro-serializer.version>
         <dep.spring-cloud-config.version>2.2.6.RELEASE</dep.spring-cloud-config.version>
         <dep.spring-cloud-dependencies.version>Hoxton.SR9</dep.spring-cloud-dependencies.version>
+        <dep.aspectj.version>1.9.19</dep.aspectj.version>
+        <dep.jasypt-spring-boot.version>3.0.3</dep.jasypt-spring-boot.version>
     </properties>
 
     <repositories>
@@ -82,6 +85,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
                 <version>${dep.spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${dep.jasypt-spring-boot.version}</version>
             </dependency>
 
             <dependency>
@@ -185,15 +194,16 @@
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.9.19</version>
+                <version>${dep.aspectj.version}</version>
                 <scope>runtime</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
-                <version>1.9.19</version>
+                <version>${dep.aspectj.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

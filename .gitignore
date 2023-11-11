@@ -38,3 +38,5 @@ twitter-to-kafka-service/logs/**
 
 # Contains the credentials
 config-server/src/main/resources/bootstrap.yml
+
+**/*.log
