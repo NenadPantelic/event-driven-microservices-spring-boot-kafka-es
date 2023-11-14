@@ -46,7 +46,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>${project.groupId}/config-server:${project.version}</name>
+                        <name>npantelic/config-server:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>

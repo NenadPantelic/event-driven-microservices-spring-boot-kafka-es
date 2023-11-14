@@ -42,6 +42,8 @@ public class KafkaAdminClient {
         this.adminClient = adminClient;
         this.retryTemplate = retryTemplate;
         this.webClient = webClient;
+
+        log.info("DEBUGCIC - {}", kafkaConfigData);
     }
 
     public void createTopics() {
@@ -49,7 +51,7 @@ public class KafkaAdminClient {
         try {
             createTopicsResult = retryTemplate.execute(this::doCreateTopics);
         } catch (Throwable throwable) {
-            throw new KafkaClientException("Reached max number of retries when trying to create Kafka topics.");
+            throw new KafkaClientException("Reached maxxxx number of retries when trying to create Kafka topics.");
         }
 
         checkIfTopicsCreated();

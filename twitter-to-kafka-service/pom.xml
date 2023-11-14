@@ -82,7 +82,7 @@
                 use mvn install -DskipTests to skip tests-->
                 <configuration>
                     <image>
-                        <name>${project.groupId}/twitter-to-kafka-service:${project.version}</name>
+                        <name>npantelic/twitter-to-kafka-service:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>

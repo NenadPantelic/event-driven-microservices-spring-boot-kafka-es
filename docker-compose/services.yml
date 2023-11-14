@@ -2,7 +2,8 @@ version: '3.7'
 services:
   twitter-to-kafka-service:
 #    image: ${GROUP_ID}/twitter-to-kafka-service:${SERVICE_VERSION:-latest}
-    image: 1e4e6307931c
+    image: ${GROUP_ID}/twitter-to-kafka-service:0.0.1-SNAPSHOT
+# image: 14e982af0035
     ports:
       - "5005:5005"
     volumes:
@@ -23,8 +24,9 @@ services:
       - ${GLOBAL_NETWORK:-services}
 
   config-server:
-#    image: ${GROUP_ID}/config-server:${SERVICE_VERSION:-latest}
-    image: f94a6ce2831c
+    #image: ${GROUP_ID}/config-server:${SERVICE_VERSION:-latest}
+    image: ${GROUP_ID}/config-server:0.0.1-SNAPSHOT
+#    image: 5566c97316e0
     ports:
       - "5006:5006"
     volumes:
