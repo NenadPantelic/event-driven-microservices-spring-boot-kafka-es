@@ -19,7 +19,7 @@
       Kibana
 
 - Kafka - brokers, topics, partitions, producer, consumer, Spring Kafka
-- ElasticSearch - Index API, Query API, Spring Elastic data
+- Elasticsearch - Index API, Query API, Spring Elastic data
 - Containerization with Docker
 - Reactive development
 
@@ -70,98 +70,189 @@
 - that informally guarantees that, if no new updates are made to a given data item, eventually all accesses
   to that item will return the last updated value.
 
-
 # 3. Kafka
+
 - open-source stream processing platform, immutable, append-only logs
 - designed to handle feeds with low latency and high throughput
 - Kafka topic - structure that holds data/events; immutable & append-only; consists of one or more partitions which hold
-the real data
+  the real data
 - Characteristics:
-  - fast  (relies on disk caching and memory mapped files instead of garbage collected eligible memory)
-  - memory mapped file - contains the contents of a file in Virtual Memory; lower I/O latency than
-  using a direct disk access; page cache (consists of physical pages in RAM, corresponds to physical
-  blocks on DISK)
-  - resilient (relies on the file system and disk, uses replicas)
-  - scalable - scale by partitions; ordered inside partition (guaranteed per partition ) 
-  - high throughput
-![](images/kafka_architecture.png)
-
+    - fast  (relies on disk caching and memory mapped files instead of garbage collected eligible memory)
+    - memory mapped file - contains the contents of a file in Virtual Memory; lower I/O latency than
+      using a direct disk access; page cache (consists of physical pages in RAM, corresponds to physical
+      blocks on DISK)
+    - resilient (relies on the file system and disk, uses replicas)
+    - scalable - scale by partitions; ordered inside partition (guaranteed per partition )
+    - high throughput
+      ![](images/kafka_architecture.png)
 
 Kafka producer - sends data to Kafka cluster; thread safe for multi-threading
-- a partition can have only one consumer, a consumer can read multiple partitions 
 
-The Producer has buffers of records per topic partition which are sized at **batch.size** property. 
-The smaller the batch size the less the throughput and if the batch size is too big, the memory will be wasted since 
+- a partition can have only one consumer, a consumer can read multiple partitions
+
+The Producer has buffers of records per topic partition which are sized at **batch.size** property.
+The smaller the batch size the less the throughput and if the batch size is too big, the memory will be wasted since
 that part of memory is allocated for batching. This is because the data will be sent before the batch size limit hits.
 
-Using a larger **batch.size** makes compression more efficient and if a data is larger than the batch size, it will not 
+Using a larger **batch.size** makes compression more efficient and if a data is larger than the batch size, it will not
 be batched.
 
-Under heavy load, data will most probably be batched. However, under light load data may not be batched. In that case 
-increasing **linger.ms** property can increase throughput by increasing batching with fewer requests and with an increased 
-latency on producer send -> linger.ms is by default 0. If you define it, the request will wait for that period of time 
+Under heavy load, data will most probably be batched. However, under light load data may not be batched. In that case
+increasing **linger.ms** property can increase throughput by increasing batching with fewer requests and with an
+increased
+latency on producer send -> linger.ms is by default 0. If you define it, the request will wait for that period of time
 causing some delay.
 
 The buffers are sent as fast as broker can keep up. And this can be limited by **max.in.flight.requests.per.connection**
 property and if this sets to 1, any subsequent send request will wait the previous one return result.
 
-By default, producer will wait all replicas to return result as the default value for acknowledge property is ack=all. 
+By default, producer will wait all replicas to return result as the default value for acknowledge property is ack=all.
 By setting ack=1, only the broker that gets the request will send confirmation instead of waiting all in-sync replicas.
 
-The producer property **compression.type** allows to set compression on producer level. Default value is none. This 
+The producer property **compression.type** allows to set compression on producer level. Default value is none. This
 setting can set to none, gzip, snappy, or lz4. The compression is done by batch and improves with larger batch sizes.
 
-End-to-end compression is also possible if the Kafka Broker config **compression.type** set to producer. Then the compressed
-data will be sent from a producer, then goes to the topic and returned to any consumer in the compressed format. This 
+End-to-end compression is also possible if the Kafka Broker config **compression.type** set to producer. Then the
+compressed
+data will be sent from a producer, then goes to the topic and returned to any consumer in the compressed format. This
 way compression only happens once and is reused by the broker and consumer.
 
 The Producer config property is **request.timeout.ms** default 30 seconds. It is a client property and causes the client
 to wait that much time for the server to respond to a request
 
-The Producer config property retries causes to retry a request if producer does not get an ack from kafka broker. It 
+The Producer config property retries causes to retry a request if producer does not get an ack from kafka broker. It
 defaults to 0.
 
-The Producer config property **partitioner.class** sets the partition strategy. By default, **partitioner.class** is set 
-to org.apache.kafka.clients.producer.internals.DefaultPartitioner (distributes the load among brokers by applying Round-Robin
+The Producer config property **partitioner.class** sets the partition strategy. By default, **partitioner.class** is set
+to org.apache.kafka.clients.producer.internals.DefaultPartitioner (distributes the load among brokers by applying
+Round-Robin
 distribution algorithm)
 
-
 - Key/Value Serializer Class
-- compressionType 
-- acks 
-- batchSize 
-- lingerMs 
+- compressionType
+- acks
+- batchSize
+- lingerMs
 - requestTimeoutMs
 - retryCount
 
 Apache Avro - data model specification; strict schema and efficient byte serialization
 
-
 # External config repository
-- one of the 12-factors 
+
+- one of the 12-factors
 
 # JASYPT vs JCE
-- JASYPT's default output is Base64 encoded (but can set output to HEX); 
-on the other hand, JCE's output is by default in hexadecimal format.
+
+- JASYPT's default output is Base64 encoded (but can set output to HEX);
+  on the other hand, JCE's output is by default in hexadecimal format.
 - JASYPT doesn't support PBKDF2 - Password Based Key Derivation Function 2
-- PBKDF2 uses salt and iteration count - reduces vulnerability to force brute force attacks (slow to compute in brute 
-force manner) - the bigger iteration count, the harder to compute and with that, to apply brute force attack.
+- PBKDF2 uses salt and iteration count - reduces vulnerability to force brute force attacks (slow to compute in brute
+  force manner) - the bigger iteration count, the harder to compute and with that, to apply brute force attack.
 - Rainbow attacks - type of attack that uses a hash table to crack passwords by comparison
 - JCE uses `AesBytesEncryptor` - based on PBKDF2 with salt and iteration count.
-- Bear in mind that secrets are decrypted in config server and sent unencrypted to other services (so use TLS communication)
+- Bear in mind that secrets are decrypted in config server and sent unencrypted to other services (so use TLS
+  communication)
 
 Asymmetric encryption:
+
 - More secure - uses two keys
 - Has a private secret key and a shared public key
 - The message is encrypted with public key and can only be decrypted with private key
-- slower than symmetric encryption because it has more complex logic 
+- slower than symmetric encryption because it has more complex logic
 - provides confidentiality and data integrity (digital signature)
 - example: RSA
 
 Symmetric encryption:
+
 - less secure - one key
 - faster than asymmetric approach, as it uses the same key in encryption and decryption
 - message is encrypted and decrypted with the same shared key
 - provides confidentiality
 - sharing the key securely is a challenge
 - example: AES
+
+# Kafka consumer
+
+- Kafka relies on logs - partitions
+- producer writes to the end of a specific partition (topic consists multiple partitions); consumers read the log
+  starting from the beginning
+- Kafka distributes partitions to consumers based on the consumer group id
+- each partition is assigned to single consumer in a consumer group
+- different consumer groups can read the same data from the same partition
+- set partition number to be equal to consumer number. If you have more consumers than partitions, they will be idle.
+- set poll timeout to a value not too big to prevent blocking indefinitely, not too small to prevent CPU being stalled
+- to start from beginning with a new consumer group, we can set the `auto.offset.reset` to the earliest which the
+  default
+  value of latest which is the latest committed offset. You can assign method to set tracing offset explicitly. You can
+  also
+  use custom `ConsumerRebalanceListener` when subscribing and override `onPartitionAssigned` method and use
+  `consumer.seekToBeginning` method.
+- Partition strategy - hashing with key - `hash(key) % num_of_partitions`, Round-Robin
+- Multithreading in a single consumer will not use parallel partition consuming. But, you can still use multiple threads
+  in each consumer thread to gain some throughput which you can scale according to your need.
+- Scaling per partition in consumer level is limited to partition number. We can add additional threads on each consumer
+  but multiple threads will break ordering in single partition you need to take care of it. With multi thread
+  consumer per partition of course we have more TCP connections to leader and brokers.
+- Delivery semantics: At least once / At most once / Exactly once. Rely on consumer commits & acks.
+    - If you commit after processing at least once, before processing at most once.
+    - Exactly once requires to coordinate between producer and consumer and using transactions starting from producer
+      part.
+
+## Kafka consumer properties
+
+Key/Value Deserializers
+Consumer GroupId
+Auto Offset Reset
+Specific Avro Reader
+Auto Startup
+Concurrency Level
+Session Timeout Ms
+Heartbeat Interval Ms
+Max Poll Interval Ms
+Max Poll Records
+Max Partition Fetch Bytes
+Max Poll Duration Ms
+
+# Elasticsearch
+
+- open-source search engine
+- Apache Lucene search engine - high performance full-featured text search engine
+- Organize your data and make it easily accessible
+- Easy REStful API based on JSON
+- Easy scale
+- Type guessing, dynamic mapping and Lucene standard analyses
+- Query DSL for complex queries
+
+Inverted index:
+
+- ES uses a structure called an inverted index, which is designed to allow very fast text searches
+- Inverted index consists of a list of the unique words that appear in any document, and for each word, a list of the
+  documents in which it appears
+- you can find only terms that exist in your index, so both the indexed and query string must be normalized into the
+  same form
+- ES analyzers:
+    - analyzing consists of 3 steps
+        1. Character filters: tidy up the string like strip out HTML, change & to and etc.
+        2. Tokenizers: tokenize the string into individual words and split the string into terms using
+           whitespaces and punctuation
+        3. Token filters: filter out the string like change the word like lowercase, remove terms like stop words such
+           as __a__, __the__, and finally add words like synonyms.
+    - ES provides many character filters, tokenizers and token filters out of the box. These can be combined to create
+      custom analyzers suitable for different purposes
+
+- Basic data types:
+    - Binary: Base64 encoded string
+    - Numbers: integer, long, double
+    - Boolean: true/false
+    - Text: Analyzed, unstructured text
+    - Keywords: keywords, wildcards (not analyzed)
+    - Object: A JSON object
+    - Date:
+        - A formatted date as string
+        - An integer that represents seconds since the epoch
+        - A long that represent milliseconds since the epoch
+
+- prevent split brain - maximize number of nodes which could be down at the moment
+
+`master_eligible_nodes / 2 + 1` - quorum formula

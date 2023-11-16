@@ -42,8 +42,6 @@ public class KafkaAdminClient {
         this.adminClient = adminClient;
         this.retryTemplate = retryTemplate;
         this.webClient = webClient;
-
-        log.info("DEBUGCIC - {}", kafkaConfigData);
     }
 
     public void createTopics() {
@@ -70,7 +68,7 @@ public class KafkaAdminClient {
         return adminClient.createTopics(topics);
     }
 
-    private void checkIfTopicsCreated() {
+    public void checkIfTopicsCreated() {
         Collection<TopicListing> topics = getTopics();
         int retryCount = 1;
         Integer maxRetry = retryConfigData.getMaxAttempts();

@@ -41,3 +41,5 @@ config-server/src/main/resources/bootstrap.yml
 config-server/logs/
 
 docker-compose/docker-logs
+
+**/logs/**
