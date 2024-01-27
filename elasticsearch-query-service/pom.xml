@@ -7,10 +7,9 @@
         <groupId>com.np</groupId>
         <artifactId>event-driven-microservice-spring-boot-kafka-es</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kafka-consumer</artifactId>
+    <artifactId>elasticsearch-query-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,7 +18,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.np</groupId>
             <artifactId>app-config-data</artifactId>
@@ -27,38 +25,49 @@
 
         <dependency>
             <groupId>com.np</groupId>
-            <artifactId>kafka-admin</artifactId>
+            <artifactId>elasticsearch-config</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.np</groupId>
-            <artifactId>kafka-model</artifactId>
+            <groupId>com.np.elasticsearch</groupId>
+            <artifactId>elasticsearch-query-client</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.np</groupId>
-            <artifactId>elasticsearch-index-client</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.np</groupId>
-            <artifactId>elasticsearch-model</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.apache.avro</groupId>
-            <artifactId>avro</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-hateoas</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
     </dependencies>
 
 </project>

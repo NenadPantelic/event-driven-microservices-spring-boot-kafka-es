@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "elastic-config")
+@ConfigurationProperties(prefix = "elasticsearch-config")
 public class ElasticsearchConfigData {
 
     private String indexName;

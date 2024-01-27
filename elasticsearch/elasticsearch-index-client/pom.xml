@@ -10,7 +10,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kafka-consumer</artifactId>
+    <artifactId>elasticsearch-index-client</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,25 +19,19 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.np</groupId>
             <artifactId>app-config-data</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.np</groupId>
-            <artifactId>kafka-admin</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.np</groupId>-->
+<!--            <artifactId>kafka-model</artifactId>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>com.np</groupId>
-            <artifactId>kafka-model</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.np</groupId>
-            <artifactId>elasticsearch-index-client</artifactId>
+            <artifactId>elasticsearch-model</artifactId>
         </dependency>
 
         <dependency>
@@ -46,19 +40,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.avro</groupId>
-            <artifactId>avro</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
     </dependencies>
-
 </project>

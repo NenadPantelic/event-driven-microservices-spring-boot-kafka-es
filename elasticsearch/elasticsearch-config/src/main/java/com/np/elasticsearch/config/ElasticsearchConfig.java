@@ -17,7 +17,7 @@ import java.util.Objects;
 
 @Configuration
 // required to scan and find elasticsearch repositories
-@EnableElasticsearchRepositories(basePackages = "com.np.elasticsearch.client.repository")
+@EnableElasticsearchRepositories(basePackages = "com.np.elasticsearch")
 public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
 
     private final ElasticsearchConfigData elasticsearchConfigData;

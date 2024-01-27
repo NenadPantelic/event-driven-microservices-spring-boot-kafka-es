@@ -3,7 +3,7 @@ package com.np.kafkatoelasticservice.consumer.impl;
 import com.np.config.KafkaConfigData;
 import com.np.config.KafkaConsumerConfigData;
 import com.np.elastic.model.index.impl.TwitterIndexModel;
-import com.np.elasticsearch.client.service.ElasticsearchIndexClient;
+import com.np.elasticsearch.index.client.service.ElasticsearchIndexClient;
 import com.np.kafka.admin.client.KafkaAdminClient;
 import com.np.kafka.avro.model.TwitterAvroModel;
 import com.np.kafkatoelasticservice.consumer.KafkaConsumer;

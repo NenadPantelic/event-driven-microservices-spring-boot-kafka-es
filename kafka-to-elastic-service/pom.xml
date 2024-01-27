@@ -35,7 +35,7 @@
 
         <dependency>
             <groupId>com.np</groupId>
-            <artifactId>elasticsearch-client</artifactId>
+            <artifactId>elasticsearch-index-client</artifactId>
         </dependency>
 
         <dependency>
