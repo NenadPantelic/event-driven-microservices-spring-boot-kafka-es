@@ -51,7 +51,7 @@ services:
       - elastic-3
     environment:
       - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m"
-      - "LOGGING_LEVEL_COM_MICROSERVICES_DEMO=info"
+      - "LOGGING_LEVEL_com_NP=info"
       - "LOGGING_LEVEL_ROOT=info"
       - "KAFKA-CONFIG_TOPIC-NAME=twitter-topic"
       - "KAFKA-CONFIG_BOOTSTRAP-SERVERS=kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092"
@@ -68,7 +68,7 @@ services:
     image: ${GROUP_ID}/config-server:0.0.1-SNAPSHOT
     #    image: 5566c97316e0
     ports:
-#      - "5006:5006"
+      #      - "5006:5006"
       - "8888:8888"
     volumes:
       - "./docker-logs:/workspace/config-server/logs"
@@ -77,5 +77,34 @@ services:
       - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m"
       # for JCE
       - "ENCRYPT_KEY=${ENCRYPT_KEY}"
+    networks:
+      - ${GLOBAL_NETWORK:-services}
+
+  elasticsearch-query-service:
+    image: ${GROUP_ID}/config-server:0.0.1-SNAPSHOT
+    ports:
+      - "5008:5008"
+      - "8183:8183"
+    volumes:
+      - "./docker-logs:/workspace/elasticsearch-query-service/logs"
+      - "./check-config-server-started.sh:/usr/local/bin/check-config-server-started.sh"
+    user: root
+    entrypoint: [ "bash", "check-config-server-started.sh" ]
+    depends_on:
+      - config-server
+      - elastic-1
+      - elastic-2
+      - elastic-3
+    environment:
+      - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m"
+      - "LOGGING_LEVEL_com_NP=info"
+      - "LOGGING_LEVEL_ROOT=info"
+      - "SERVER_PORT=8183"
+      - "SERVER_SERVLET_CONTEXT-PATH=/elasticsearch-query-service"
+      - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
+      - "ELASTIC-CONFIG_INDEX-NAME=twitter-index"
+      - "ELASTIC-CONFIG_CONNECTION-URL=http://elastic-1:9200"
+      - "ENCRYPT_KEY=${ENCRYPT_KEY}"
+
     networks:
       - ${GLOBAL_NETWORK:-services}

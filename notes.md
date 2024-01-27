@@ -337,3 +337,13 @@ Accept: application/vnd.api.v2+json<br>
 Example:<br>
 http://localhost/documents?version=1 <br>
 http://localhost/documents?version=2 <br>
+
+
+
+# Open API docs
+- Spring docs = Open API specification + Spring Boot
+- Single dependency: springdoc-openapi-ui
+- Based on Swagger3
+- Automate the generation of API documentation (`@Operation`, `@ApiResponse`)
+- JSON, YAML and HTML formats
+- Supports content negotiation versioning

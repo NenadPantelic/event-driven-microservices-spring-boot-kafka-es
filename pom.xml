@@ -35,6 +35,7 @@
     <packaging>pom</packaging>
     <properties>
         <java.version>11</java.version>
+        <docker.registry-space>npantelic</docker.registry-space>
 
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 
@@ -45,6 +46,7 @@
         <dep.lombok.version>1.18.28</dep.lombok.version>
         <dep.spring-kafka.version>2.6.2</dep.spring-kafka.version>
         <dep.spring-retry.version>1.3.0</dep.spring-retry.version>
+        <dep.springdoc-openapi.version>1.5.0</dep.springdoc-openapi.version>
         <dep.kafka-avro-serializer.version>5.5.1</dep.kafka-avro-serializer.version>
         <dep.spring-cloud-config.version>2.2.6.RELEASE</dep.spring-cloud-config.version>
         <dep.spring-cloud-dependencies.version>Hoxton.SR9</dep.spring-cloud-dependencies.version>
@@ -236,6 +238,12 @@
             </dependency>
 
             <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${dep.springdoc-openapi.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>io.confluent</groupId>
                 <artifactId>kafka-avro-serializer</artifactId>
                 <version>${dep.kafka-avro-serializer.version}</version>
@@ -262,14 +270,14 @@
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.9.19</version>
+                <version>${dep.aspectj.version}</version>
                 <scope>runtime</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
-                <version>1.9.19</version>
+                <version>${dep.aspectj.version}</version>
             </dependency>
 
             <dependency>
