@@ -1,6 +1,6 @@
 package com.np.elasticsearch.query.service.logic;
 
-import com.np.elasticsearch.query.service.model.ElasticsearchQueryServiceResponseModel;
+import com.np.elasticsearch.query.service.common.model.ElasticsearchQueryServiceResponseModel;
 
 import java.util.List;
 

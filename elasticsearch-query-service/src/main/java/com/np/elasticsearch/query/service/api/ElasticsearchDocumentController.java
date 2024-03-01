@@ -1,8 +1,8 @@
 package com.np.elasticsearch.query.service.api;
 
+import com.np.elasticsearch.query.service.common.model.ElasticsearchQueryServiceRequestModel;
+import com.np.elasticsearch.query.service.common.model.ElasticsearchQueryServiceResponseModel;
 import com.np.elasticsearch.query.service.logic.ElasticsearchQueryService;
-import com.np.elasticsearch.query.service.model.ElasticsearchQueryServiceRequestModel;
-import com.np.elasticsearch.query.service.model.ElasticsearchQueryServiceResponseModel;
 import com.np.elasticsearch.query.service.model.ElasticsearchQueryServiceResponseModelV2;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -11,7 +11,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.parameters.P;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -98,7 +97,7 @@ public class ElasticsearchDocumentController {
             @ApiResponse(responseCode = "400", description = "Bad request."),
             @ApiResponse(responseCode = "500", description = "Internal server error."),
     })
-    @PostMapping
+    @PostMapping("/query-by-text")
     public ResponseEntity<List<ElasticsearchQueryServiceResponseModel>> getDocumentByText(
             @RequestBody @Valid ElasticsearchQueryServiceRequestModel elasticsearchQueryServiceRequestModel) {
         List<ElasticsearchQueryServiceResponseModel> documents = elasticsearchQueryService.getDocumentsByText(

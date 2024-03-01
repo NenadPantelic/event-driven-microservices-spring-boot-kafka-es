@@ -339,7 +339,6 @@ http://localhost/documents?version=1 <br>
 http://localhost/documents?version=2 <br>
 
 
-
 # Open API docs
 - Spring docs = Open API specification + Spring Boot
 - Single dependency: springdoc-openapi-ui
@@ -347,3 +346,116 @@ http://localhost/documents?version=2 <br>
 - Automate the generation of API documentation (`@Operation`, `@ApiResponse`)
 - JSON, YAML and HTML formats
 - Supports content negotiation versioning
+
+# Web clients
+
+- Spring WebClient: async and non-blocking successor of RestTemplate
+- Thymeleaf: Server-side Java template engine, well integrated with Spring
+- HTML Thymeleaf templates with Bootstrap - HTML, CSS and JS
+- Client-side load balancing with Spring Cloud @LoadBalancer 
+
+
+# Oauth 2.0 and OpenID Connect Protocols
+- Oauth 2.0: For delegated authorization by using an access token
+- OpenID Connect: For authentication of user by using an ID token
+- Oauth 2.0 terminology:
+  - Resource owner: User that owns the resource. This user will provide the user/pwd 
+  as initial authentication to get an access token
+  - Client: Site that holds a functionality that will require a user to authenticate/authorize first
+  - Authorization server: Server that holds the user credentials and is used to authenticate and authorize user and 
+  return access token and ID token
+  - Resource server: Site that returns the resource to the client when client provides the correct tokens obtained from
+  authz server.
+  - Authorization grant: Rights granted during oauth
+  - Redirect URL: Callback URL on client site
+  - Response type: Code or token
+  - Access token: token to use in authorization to reach to resource server
+  - OpenID token: Token that includes user details and is used to log in to a system
+
+## Oauth2 flows
+
+- Authorization code:
+  - client redirects the call to authz server with a request that includes redirect URL and
+  response type as code, can also include scopes like read/write to limit the rights granted, to be 
+  checked at resource server
+  - user is asked that X client wants to access your Y privilege. If user confirms, enter credentials
+  - If credentials are correct, user is redirected to redirect URL on client by passing a code
+  - Client then make a backend call to authz server with the code + client-id + client-secret where client-id and 
+  client-secret were obtained during registration of the client to authz server previously
+  - Then authz server returns an access token
+
+- Implicit:
+  - Client redirects the call to authz server with a request that includes redirect URL and response type as token, can 
+  also include scope for like read/write to limit the rights granted to be checked at resource server
+  - User is asked that X client wants to access your Y privilege. If user confirms, enter credentials.
+  - If credentials are correct, user is redirected to redirect URL on client by passing a code
+  - No backend call as in Authorization code flow. So implicit flow is considered as less secure. Be careful with 
+  client-side attacks like XSS
+
+- Resource owner password credentials:
+  - Client sends resource owner's user/pwd to authz server with a backend call
+  - considered to be less secure as resource owner's credentials shared with client avoid using this
+
+- Client credentials:
+  - No user included, machine to machine communication with a backend call by sending the client-id/client-secret
+
+![](images/authz_flow.png)
+
+## OpenID connect
+- Brings standard for authentication in Oauth as there is no standard way of getting user information in Oauth protocol
+- Additional protocol on top of Oauth where Oauth is designed for authorization with permissions and scopes
+- OpenID connect adds ID token and user info endpoint and brings standard set of scopes for authentication to standardize
+implementation
+- Use the same flow with Oauth, add scope:openid. So, in the authz code flow, by adding scope:openid, authz server will
+  return both ID token and access token
+- Use for logging the user in and making an account available for other systems (SSO). While Oauth is for granting 
+access to an API and getting access to user data in other systems.
+- Can be used easily with microservices. First service gets openid and access token and provides it to another service
+for auhtn/authz purposes.
+- Can be used by web application with a normal flow and creating a session on browser and placing tokens in headers
+
+## JWT
+- de-facto standard token format
+- three-part format: header.{claims or payload}.signature
+- signed by server's private key, optionally encrypted with public key (client can send
+public key along with redirect URL)
+- In transit, Base64-encoded JWT is used.
+
+## Validation of token
+Resource server:
+- JWT includes a signature. Resource server validates integrity of JWT by looking at alg claim and fetching public
+key from jwks URL to check the signature. JWKS (JSON web key store) URL provides keys. Resource server can figure out 
+the JWKS by looking at iss on JWT.
+- Check if iss(issuer) claim has a valid URL definition where iss identifies the issuer that issued JWT.
+- Validate exp claim to identify if JWT is expired. If expired a new token request or refresh token request required.
+- Validate timestamp by looking at iat claim on JWT where iat is the issued at timestamp indicating the age of JWT.
+- Optional check for aud (audience) claim to identify the intended recipient of the token in case of oauth. On the other
+hand for OpenID, aud claim refers to the client_id that request the resource. Note that Audience is mandatory for ID 
+tokens.
+- Optional check for nonce claim. Nonce used to associate a client session with an id token and in case of OIDC it 
+should be used to prevent replay attacks by including a cryptographically secure random string in id token as well as in 
+the authn request and then required a check for both value on the server to validate client before authentication. Nonce
+should be re-created in each request.
+- Check the scopes and roles by parsing JWT to enable authorization
+
+Client:
+- Validates integrity of ID token by checking the signature as resource server checks access token
+- Check if iss (issuer) claim has a valid URL definition where iss identifies the issuer that issued JWT.
+- Validates exp claim to identify JWT is expired. If expired a new token request or refresh token required. 
+
+# Kafka streams
+- A library for building streaming applications, where input and output data are stored in Kafka clusters
+- Transform input Kafka topics into output Kafka topics
+- Additional layer on top of Kafka producer/consumer APIs
+- Designed to use simple Java/Scala apps along with Kafka server-side technologies
+- Works well when we want to compute aggregations or join streams of data
+
+Basic flow:
+  - Create a StreamBuilder
+  - Define input KStream by using StreamBuilder, input serde type and input Kafka topic
+  - Create computational logic that is called Topology like map/flatMap values, use group by etc
+  - Send the data to output topic with output KStream by using output serde type
+
+- Serde types are used to define serialization/deserialization objects in stream processing
+- Can also be used with state store. During streaming, a materialized read-only key store can
+be used to store computed result which can then be queried, for example with a REST API.

@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  keycloak-authorization-server:
+    image: quay.io/keycloak/keycloak:${KEYCLOAK_VERSION:-latest}
+    hostname: keycloak-server
+    ports:
+      - "8081:8081" # the default port is 8088
+    environment:
+      - "KEYCLOAK_USER=admin"
+      - "KEYCLOAK_PASSWORD=admin"
+      - "JAVA_OPTS=-Djboss.http.port=8081"
+      # not to store realms in memory, but in db via volumes
+      - "DB_VENDOR=POSTGRES"
+      # use docker host to connect to the database
+      - "DB_ADDR=host.docker.internal"
+      - "DB_DATABASE=keycloak"
+      - "DB_USER=keycloak"
+      - "DB_PASSWORD=keycloak"
+      - "DB_SCHEMA=keycloak"

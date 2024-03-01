@@ -1,6 +1,7 @@
 package com.np.elasticsearch.query.service.model;
 
 
+import com.np.elasticsearch.query.service.common.model.ElasticsearchQueryServiceResponseModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

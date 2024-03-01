@@ -2,8 +2,8 @@ package com.np.elasticsearch.query.service.model.assembler;
 
 import com.np.elastic.model.index.impl.TwitterIndexModel;
 import com.np.elasticsearch.query.service.api.ElasticsearchDocumentController;
-import com.np.elasticsearch.query.service.model.ElasticsearchQueryServiceResponseModel;
-import com.np.elasticsearch.query.service.transformer.ESDocumentToResponseModelTransformer;
+import com.np.elasticsearch.query.service.common.model.ElasticsearchQueryServiceResponseModel;
+import com.np.elasticsearch.query.service.common.transformer.ESDocumentToResponseModelTransformer;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;

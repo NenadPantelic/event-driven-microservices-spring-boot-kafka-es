@@ -2,8 +2,8 @@ package com.np.elasticsearch.query.service.logic.impl;
 
 import com.np.elastic.model.index.impl.TwitterIndexModel;
 import com.np.elasticsearch.query.client.service.ElasticsearchQueryClient;
+import com.np.elasticsearch.query.service.common.model.ElasticsearchQueryServiceResponseModel;
 import com.np.elasticsearch.query.service.logic.ElasticsearchQueryService;
-import com.np.elasticsearch.query.service.model.ElasticsearchQueryServiceResponseModel;
 import com.np.elasticsearch.query.service.model.assembler.ElasticsearchQueryServiceResponseModelAssembler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

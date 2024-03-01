@@ -30,12 +30,12 @@ services:
   #    networks:
   #      - ${GLOBAL_NETWORK:-services}
 
-  kafka-to-elastic-service:
-    image: ${GROUP_ID}/kafka-to-elastic-service:0.0.1-SNAPSHOT
+  kafka-to-elasticsearch-service:
+    image: ${GROUP_ID}/kafka-to-elasticsearch-service:0.0.1-SNAPSHOT
     ports:
       - "5006:5006"
     volumes:
-      - "./docker-logs:/workspace/kafka-to-elastic-service/logs"
+      - "./docker-logs:/workspace/kafka-to-elasticsearch-service/logs"
       - "./check-kafka-topics-created.sh:/usr/local/bin/check-kafka-topics-created.sh"
     user: root
     # or make it executable
@@ -46,9 +46,9 @@ services:
       - kafka-broker-1
       - kafka-broker-2
       - kafka-broker-3
-      - elastic-1
-      - elastic-2
-      - elastic-3
+      - elasticsearch-1
+      - elasticsearch-2
+      - elasticsearch-3
     environment:
       - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m"
       - "LOGGING_LEVEL_com_NP=info"
@@ -58,7 +58,7 @@ services:
       - "KAFKA-CONFIG_SCHEMA-REGISTRY-URL=http://schema-registry:8081"
       - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
       - "ELASTIC-CONFIG_INDEX-NAME=twitter-index"
-      - "ELASTIC-CONFIG_CONNECTION-URL=http://elastic-1:9200"
+      - "ELASTIC-CONFIG_CONNECTION-URL=http://elasticsearch-1:9200"
       - "ENCRYPT_KEY=${ENCRYPT_KEY}"
     networks:
       - ${GLOBAL_NETWORK:-services}
@@ -80,7 +80,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-services}
 
-  elasticsearch-query-service:
+  elasticsearch-query-service-1:
     image: ${GROUP_ID}/config-server:0.0.1-SNAPSHOT
     ports:
       - "5008:5008"
@@ -92,9 +92,9 @@ services:
     entrypoint: [ "bash", "check-config-server-started.sh" ]
     depends_on:
       - config-server
-      - elastic-1
-      - elastic-2
-      - elastic-3
+      - elasticsearch-1
+      - elasticsearch-2
+      - elasticsearch-3
     environment:
       - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m"
       - "LOGGING_LEVEL_com_NP=info"
@@ -103,8 +103,67 @@ services:
       - "SERVER_SERVLET_CONTEXT-PATH=/elasticsearch-query-service"
       - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
       - "ELASTIC-CONFIG_INDEX-NAME=twitter-index"
-      - "ELASTIC-CONFIG_CONNECTION-URL=http://elastic-1:9200"
+      - "ELASTIC-CONFIG_CONNECTION-URL=http://elasticsearch-1:9200"
       - "ENCRYPT_KEY=${ENCRYPT_KEY}"
 
+    networks:
+      - ${GLOBAL_NETWORK:-services}
+
+  elasticsearch-query-service-2:
+    image: ${GROUP_ID}/config-server:0.0.1-SNAPSHOT
+    ports:
+      - "5008:5008"
+      - "8183:8185"
+    volumes:
+      - "./docker-logs:/workspace/elasticsearch-query-service/logs"
+      - "./check-config-server-started.sh:/usr/local/bin/check-config-server-started.sh"
+    user: root
+    entrypoint: [ "bash", "check-config-server-started.sh" ]
+    depends_on:
+      - config-server
+      - elasticsearch-1
+      - elasticsearch-2
+      - elasticsearch-3
+    environment:
+      - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m"
+      - "LOGGING_LEVEL_com_NP=info"
+      - "LOGGING_LEVEL_ROOT=info"
+      - "SERVER_PORT=8185"
+      - "SERVER_SERVLET_CONTEXT-PATH=/elasticsearch-query-service"
+      - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
+      - "ELASTIC-CONFIG_INDEX-NAME=twitter-index"
+      - "ELASTIC-CONFIG_CONNECTION-URL=http://elasticsearch-1:9200"
+      - "ENCRYPT_KEY=${ENCRYPT_KEY}"
+
+    networks:
+      - ${GLOBAL_NETWORK:-services}
+
+  elasticsearch-query-web-client:
+    image: ${GROUP_ID}/elasticsearch.query.webclient:${SERVICE_VERSION:-latest}
+    ports:
+      - "5010:5010"
+      - "8184:8184"
+    volumes:
+      - "./docker-logs:/workspace/elasticsearch-query-web-client/logs"
+      - "./check-config-server-started.sh:/usr/local/bin/check-config-server-started.sh"
+    user: root
+    entrypoint: [ "check-config-server-started.sh" ]
+    depends_on:
+      - config-server
+    environment:
+      - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5010 -Xms128m -Xmx256m"
+      - "LOGGING_LEVEL_COM_MICROSERVICES_DEMO=info"
+      - "LOGGING_LEVEL_ROOT=info"
+      - "SERVER_PORT=8184"
+      - "SERVER_SERVLET_CONTEXT-PATH=/elasticsearch-query-web-client"
+      - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
+      - "ELASTICSEARCH-QUERY-WEB-CLIENT_WEB-CLIENT_BASE-URL=http://elasticsearch-query-service/elasticsearch-query-service/documents"
+      - "ELASTICSEARCH-QUERY-WEB-CLIENT_WEB-CLIENT_INSTANCES_0_ID=elasticsearch-query-service-1"
+      - "ELASTICSEARCH-QUERY-WEB-CLIENT_WEB-CLIENT_INSTANCES_0_HOST=elasticsearch-query-service-1"
+      - "ELASTICSEARCH-QUERY-WEB-CLIENT_WEB-CLIENT_INSTANCES_0_PORT=8183"
+      - "ELASTICSEARCH-QUERY-WEB-CLIENT_WEB-CLIENT_INSTANCES_1_ID=elasticsearch-query-service-2"
+      - "ELASTICSEARCH-QUERY-WEB-CLIENT_WEB-CLIENT_INSTANCES_1_HOST=elasticsearch-query-service-2"
+      - "ELASTICSEARCH-QUERY-WEB-CLIENT_WEB-CLIENT_INSTANCES_1_PORT=8185"
+      - "ENCRYPT_KEY=${ENCRYPT_KEY}"
     networks:
       - ${GLOBAL_NETWORK:-services}

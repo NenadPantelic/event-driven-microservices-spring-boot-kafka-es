@@ -31,6 +31,12 @@
         <module>elasticsearch/elasticsearch-query-client</module>
         <module>common-util</module>
         <module>elasticsearch-query-service</module>
+        <module>elasticsearch-query-web-client</module>
+        <module>elasticsearch-query-service-common</module>
+        <module>elasticsearch-query-web-client-common</module>
+        <module>reactive-elasticsearch-query-service</module>
+        <module>reactive-elasticsearch-query-web-client</module>
+        <module>kafka-streams-service</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -52,6 +58,12 @@
         <dep.spring-cloud-dependencies.version>Hoxton.SR9</dep.spring-cloud-dependencies.version>
         <dep.aspectj.version>1.9.19</dep.aspectj.version>
         <dep.elasticsearch.version>7.9.1</dep.elasticsearch.version>
+
+        <dep.kafka-streams.version>2.6.0</dep.kafka-streams.version>
+        <dep.kafka-clients.version>2.6.0</dep.kafka-clients.version>
+        <dep.kafka-avro-serializer.version>5.5.1</dep.kafka-avro-serializer.version>
+        <dep.kafka-streams-avro-serde.version>5.5.1</dep.kafka-streams-avro-serde.version>
+        <dep.avro.version>1.10.0</dep.avro.version>
     </properties>
 
     <repositories>
@@ -167,13 +179,19 @@
 
             <dependency>
                 <groupId>com.np</groupId>
-                <artifactId>elasticsearch-config</artifactId>
+                <artifactId>elasticsearch-query-service-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.np.elasticsearch</groupId>
                 <artifactId>elasticsearch-query-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.np</groupId>
+                <artifactId>elasticsearch-query-web-client-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -220,6 +238,11 @@
             </dependency>
 
             <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-loadbalancer</artifactId>
+                <version>${dep.spring-cloud-config.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
                 <version>${dep.spring-boot.version}</version>
@@ -234,6 +257,12 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-hateoas</artifactId>
+                <version>${dep.spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
                 <version>${dep.spring-boot.version}</version>
             </dependency>
 
@@ -290,6 +319,31 @@
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>elasticsearch-rest-high-level-client</artifactId>
                 <version>${dep.elasticsearch.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.confluent</groupId>
+                <artifactId>kafka-streams-avro-serde</artifactId>
+                <version>${dep.kafka-streams-avro-serde.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-streams</artifactId>
+                <version>${dep.kafka-streams.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${dep.kafka-clients.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.thymeleaf.extras</groupId>
+                <artifactId>thymeleaf-extras-springsecurity5</artifactId>
+                <version>3.0.5.RELEASE</version>
             </dependency>
 
         </dependencies>
